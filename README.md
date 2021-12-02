@@ -1,5 +1,5 @@
 # Tienda la 40 - Orquestador
-Repositorio para el orquestador (back-end) del proyecto de tienda de barrio "Tienda La 40" con fines académicos para Ingeniería de Software 1 de la MCIC de la Universidad Distrital Francisco José de Caldas, Bogotá, Colombia.22
+Repositorio para el orquestador (back-end) del proyecto de tienda de barrio "Tienda La 40" con fines académicos para Ingeniería de Software 1 de la MCIC de la Universidad Distrital Francisco José de Caldas, Bogotá, Colombia.
 
 ## Integrantes
 
