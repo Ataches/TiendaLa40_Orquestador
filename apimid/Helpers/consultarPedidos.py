@@ -64,6 +64,8 @@ def crearJsonClienteFinal(pedidosCliente):
         for producto in pedido[4]:
             productos.append(productoSerializer.serialise(producto))
         pedidos.append(pedidosSerializer.serialise(pedido, productos))
+    
+    pedidosT = pedidosTotalSerializer.serialise(pedidos)
 
-    return pedidos
+    return pedidosT
 

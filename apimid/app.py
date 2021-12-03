@@ -35,6 +35,7 @@ def get_method(id):
     
     pedidosCliente = consultarPedidos.crearJsonCliente(id, data)
     jsonret = consultarPedidos.crearJsonClienteFinal(pedidosCliente)
+    
     return json.dumps(jsonret), 200
     
 
