@@ -21,3 +21,10 @@ class productoSerializer:
             "descripcion": producto[4],
             "valor_total_p": producto[5] 
         }
+
+class pedidosTotalSerializer:
+    @staticmethod
+    def serialise(pedido) -> dict:
+        return {
+            "pedidos": pedido, 
+        }
