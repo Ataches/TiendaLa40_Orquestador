@@ -108,6 +108,13 @@ Empleando postman (o similares) es posible realizar el consumo de los microservi
 
 ![Components_Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Ataches/TiendaLa40_Orquestador/master/C4ComponentsDiagram.puml)
 
+Cabe mencionar que se implementa el API_MID inicialmente contemplado como capa media en la arquitectura que contiene la lógica del negocio para algunas operaciones sin necesidad de cargar el cliente o los microservicios con el crud. 
+
+Se exploró la idea de un Ruler:
+Gestor de reglas de negocio para los servicios de tipo MID, a este le consultan la declaración de todos los predicados que forman la base de conocimiento para cada contexto.
+
+API_MID:
+En este servicio se maneja la lógica de negocio en colaboración con el RULER, dada la orientación a microservicios, los servicios de esta capa serán servicios integradores que manejan además de la lógica las transacciones requeridas por el contexto.
 
 ### Licencia
 
@@ -117,4 +124,4 @@ TiendaLa40_Orquestador is free software: you can redistribute it and/or modify i
 
 TiendaLa40_Orquestador is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with sintomas_crud. If not, see https://www.gnu.org/licenses/.
+You should have received a copy of the GNU General Public License along with TiendaLa40_Orquestador. If not, see https://www.gnu.org/licenses/.
